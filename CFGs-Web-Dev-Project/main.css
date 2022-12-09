@@ -1,0 +1,349 @@
+/*Navbar/Page title code start*/
+
+.navbar{
+        min-height: 70px;
+        width: 100%; 
+        background-image: url(Images/clouds.jpg);
+        background-size: cover;
+        font-weight: bold;
+        position: fixed;
+        z-index: 100;
+}
+
+.navbar-brand{
+        padding: 15px;
+        height: 80px;
+        line-height: 80px;
+}
+    
+.navbar-toggle{
+        margin-top: 23px;
+        padding: 9px 10px;
+}
+ 
+.nav-item{
+        font-size: 20px;
+        padding: 9px 10px;
+}
+
+.pageTitle{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+}
+
+.pageTitle img{
+        padding-top: 100px;
+        height: 30rem;
+        width: 20rem;
+}
+
+.jumbotron{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-bottom: 20;
+        margin-bottom: 0;
+        padding-top: 100px;
+        background-color: transparent;
+}
+
+.background{
+        background-image: url(Images/sunshineBackground.webp);
+        background-size: 100% 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/*Index page code start*/
+
+.buttonBox{
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+}
+
+.aboutUs{
+        text-align: center;
+        padding-left: 20%;
+        padding-right: 20%;
+}
+
+.aboutUsTitle{
+        padding: 1rem;
+        font-size: xx-large;
+}
+
+.aboutUsPara{
+        font-size: x-large;
+}
+
+.col-3{
+        height: 100%;
+}
+
+/*Galleries page code start*/
+
+.galleriesTitle{
+        text-align: center;
+        padding: 2%;
+        font-size: xx-large;
+}
+
+.galleryContainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+
+.galleryContainer .galleryBox{
+        margin: 2rem;
+        justify-items: auto;
+        height: 40rem;
+        width: 40rem;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+        border-radius: .5rem;
+}
+
+.galleryContainer .galleryBox iframe{
+        height: 100%;
+        width: 100%;
+}
+
+.galleryContainer .galleryBox img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        outline: none;
+        border: none;
+}
+
+/*Meet the team page code start*/
+
+.cardContainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: large;
+}
+
+.cardContainer .cardBox{
+        justify-items: auto;
+        width: 60rem;
+        padding: 5rem;
+}
+
+.cardContainer .cardBox .card-body{
+        background-color: white;
+        border-radius: 5rem;
+        box-shadow: 0 0 5px 10px white;
+}
+
+.cardContainer .cardBox img{
+        border-radius: 5rem;
+        box-shadow: 0 0 20px 20px white;
+        width: 40rem;
+}
+
+.btn{
+        font-size: large;
+}
+
+.btn:hover{
+        background-image: url(Images/rainbow.png);
+        background-size: 100% 90%;
+        background-position: center;
+        color: black;
+        font-weight: bolder;
+}
+
+/*Resources page code start*/
+
+.resourcesBtn { 
+        padding-top: 100px;
+}
+        
+.textBtn { 
+        font-size: xx-large;
+        padding-left: 20%;
+        padding-right: 20%;
+}
+
+#myCarousel {
+        padding-top: 40px;
+        justify-content: center;
+}
+
+.col {
+        padding-top: 50px;
+        font-size: large;
+}
+
+/*Make everything okay button code start*/
+
+*
+    
+    button {
+        padding: 20px 30px;
+        font-size: 1em;
+        width:200px;
+        cursor: pointer;
+        border: 0px;
+        position: relative;
+        margin: 20px;
+        transition: all .25s ease;
+        background: rgb(220, 90, 205);
+        color: #fff;
+        overflow: hidden;
+        border-radius: 10px
+    }
+    
+    .load {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: inherit
+    }
+    
+    .load::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        width: 30px;
+        height: 30px;
+        border-left: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        animation: loading1 1s ease infinite;
+        z-index: 10
+    }
+
+    
+    .load::before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        border: 3px dashed #fff;
+        width: 30px;
+        height: 30px;
+        border-left: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        animation: loading1 2s linear infinite;
+        z-index: 5
+    }
+    
+    @keyframes loading1 {
+        0% {
+            transform: rotate(0deg)
+        }
+    
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+    
+    button.active {
+        transform: scale(.85);
+    }
+    
+    button.activeLoading .loading {
+        visibility: visible;
+        opacity: 1
+    }
+    
+    button .loading {
+        opacity: 0;
+        visibility: hidden
+    }
+
+    .alert {
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+/*Footer code start*/
+
+.footer{
+        margin-top: 20px;
+        text-align: center;
+        padding: 30px;
+        background-image: url(Images/clouds.jpg);
+        background-size: cover;
+        color: black;
+        font-style: normal;
+        bottom: 0;
+        width: 100%;        
+}
+      
+
+
+.icons{
+        padding: 10px;
+        justify-content: center;      
+}
+
+.bi-facebook:hover {
+        opacity: 0.7;
+      }
+
+.bi-linkedin {
+        margin-left: 10px;
+}
+
+.bi-linkedin:hover {
+        opacity: 0.7;
+}
+
+.bi-spotify {
+        margin-left: 10px;    
+}
+
+.bi-spotify:hover {
+        opacity: 0.7;
+}
+
+
+.bi-pinterest {
+        margin-left: 10px;    
+}
+
+.bi-pinterest:hover {
+        opacity: 0.7;
+}
+
+
+.bi-twitter {
+        margin-left: 10px;    
+}
+
+.bi-twitter:hover {
+        opacity: 0.7;
+}
+
+
+.bi-reddit {
+        margin-left: 10px;    
+}
+
+.bi-reddit:hover {
+        opacity: 0.7;
+}
+
+
+.bi-instagram {
+        margin-left: 10px;    
+}
+.bi-instagram:hover {
+        opacity: 0.7;  
+}
+
+.bi-linkedin:hover {
+        opacity: 0.7;
+}
